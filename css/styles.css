@@ -65,4 +65,5 @@ a:hover {
 
 .start-button:hover {
   background-color: #6798c0;
+  cursor: pointer;
 }
