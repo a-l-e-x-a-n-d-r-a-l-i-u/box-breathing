@@ -1,3 +1,7 @@
+test-border {
+  border: solid 1px red;
+}
+
 body {
   font-family: "Staatliches", cursive;
 }
