@@ -1,0 +1,229 @@
+body {
+  background-color: #041836;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: all ease-in-out 0.8s;
+}
+
+button {
+  position: relative;
+  left: -0.27rem;
+  border-radius: 0 100rem 100rem 0;
+  border-style: none;
+  border-left-style: none;
+  background-color: rgba(246, 182, 148, 0.2);
+  box-shadow: 10px 10px 10px rgb(152 180 199 / 50%);
+  padding-left: 0;
+  margin-left: 0;
+  transition: 0.3s all ease-in-out;
+  height: 3.5rem;
+  vertical-align: middle;
+}
+
+.background-pic div {
+  font-family: "Nosifer", cursive;
+  font-size: 2.1rem;
+  color: #fff;
+  overflow-wrap: break-word;
+  margin: 2rem 1rem 1rem 1rem;
+}
+
+button i {
+  font-size: 2rem;
+  padding: 0.5rem;
+  color: #f3334e;
+  transition: 1s all ease-in-out;
+}
+
+form {
+  margin-top: 10%;
+}
+
+input {
+  border-radius: 100rem 0 0 100rem;
+  border: solid 0.1rem rgb(246, 182, 148);
+  border-right-style: none;
+  background-color: #fff;
+  padding-right: 0;
+  margin-right: 0;
+  padding-left: 1rem;
+  transition: 0.3s all ease-in-out;
+  height: 3.5rem;
+  vertical-align: middle;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+span {
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
+  display: block;
+  max-width: 55%;
+  margin: 0 auto;
+  padding-left: 2rem;
+  margin-top: 15%;
+  margin-bottom: 15%;
+  text-align: left;
+  color: #041836;
+}
+
+a:hover {
+  color: #f3334e;
+}
+
+button:active {
+  transform: scale(1.2);
+  box-shadow: 5px 5px 5px rgb(152 180 199 / 50%);
+}
+
+button:hover {
+  background-color: #f3334e;
+}
+
+button:hover i {
+  color: #fff;
+}
+
+input:focus {
+  outline: none;
+  background-color: rgba(246, 182, 148, 0.2);
+}
+
+input::-webkit-input-placeholder {
+  color: rgba(152, 180, 199, 0.8);
+}
+
+.attributions {
+  margin-top: 0;
+  padding-top: 0;
+  color: #6798c0;
+  font-size: 0.5rem;
+}
+
+.background-pic {
+  background-image: url(https://bit.ly/3xf4RD9);
+  background-size: cover;
+  max-width: 100%;
+  height: auto;
+}
+
+.background-pic .city-current-temp {
+  font-size: 1.5rem;
+  margin-top: 0rem;
+}
+
+.background-pic .current-weather-info {
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.75rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.col-6 {
+  min-height: 30rem;
+}
+
+.day-name {
+  width: 35%;
+}
+
+.fa-cloud {
+  color: #041836;
+  font-size: 1rem;
+}
+
+.fa-cloud-bolt {
+  color: #041836;
+  font-size: 1rem;
+}
+
+.fa-cloud-rain {
+  color: #6798c0;
+  font-size: 1rem;
+}
+
+.fa-cloud-sun {
+  color: #7b879b;
+  font-size: 1rem;
+}
+
+.fa-location-dot {
+  color: #f3334e;
+}
+
+.fa-snowflake {
+  color: rgba(152, 180, 199, 0.8);
+  font-size: 1rem;
+}
+
+.fa-sun {
+  color: #fdd85d;
+  font-size: 1rem;
+}
+
+.fa-wind {
+  color: #6798c0;
+  font-size: 1rem;
+}
+
+.forecast {
+  width: 10%;
+}
+
+.hide {
+  display: none;
+}
+
+.main-container {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  border: solid 0.3rem #fff;
+  border-radius: 0.5rem;
+  background-color: #fff;
+}
+
+.right-column {
+  background-color: #fff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  color: #7b879b;
+  text-align: center;
+}
+
+.right-column .here-info {
+  margin-top: 30%;
+}
+
+.right-column .now-info {
+  font-weight: 700;
+  font-size: smaller;
+  margin-bottom: 1rem;
+}
+
+.temporary {
+  min-height: 10rem;
+}
+
+.temp-units {
+  font-size: 1.25rem;
+}
+
+.weather-icon {
+  width: 15%;
+}
+
+.test-border {
+  border: 1px solid red;
+}
+
+.test-border-focus {
+  border: 1rem solid blue;
+}
