@@ -39,6 +39,8 @@ a:hover {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
 }
 
 .flex-container {
