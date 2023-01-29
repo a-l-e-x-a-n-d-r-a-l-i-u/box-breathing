@@ -1,17 +1,24 @@
-/* function breatheIn2() {
-  console.log("breatheIn1 function has started");
-  let breatheIn1 = document.getElementById("#breathe");
-  console.log("breatheIn1 variable has been declared");
-
-  breatheIn1.style = `background-image: ${fewCloudsPic}; transform: scale(1.2); transition: 3s all ease-in-out; color: #fff; font-family: "Quicksand", sans-serif;`;
-  console.log("breathBox style has been applied");
-  breatheIn1.innerHTML = "1 ...";
-} */
+setTimeout(function holdBreath1() {
+  /* Change instruction to hold breath */
+  let counting = document.getElementById("#breathCount");
+  counting.innerHTML = "hold ...";
+}, 8000);
 
 function breatheIn1() {
   let breatheInCount1 = document.getElementById("#breathe");
-  breatheInCount1.style = `transform: scale(1.2); transition: 3s all ease-in-out;`;
-  breatheInCount1.innerHTML = "1 ...";
+
+  /* Keep the fewCloudsPic showing */
+  let fewCloudsPic = "url(https://bit.ly/3bwvcVS)";
+
+  /* Slowly increase the breathbox size*/
+  breatheInCount1.style = `background-image: ${fewCloudsPic}; transform: scale(2); transition: 6s all ease-in-out;`;
+
+  /* Show instruction to breathe in */
+  let counting = document.getElementById("#breathCount");
+  counting.innerHTML = "breathe in ...";
+
+  /* Hold your breath */
+  holdBreath1();
 }
 
 function hideButton() {
@@ -21,8 +28,8 @@ function hideButton() {
   console.log("startStop variable has been declared within the function");
   startButton.style = "display: none;";
 
-  /* Start the breathbox 'animation' and counting 
-  breatheIn1(); */
+  /* Start the breathbox 'animation' and counting */
+  breatheIn1();
   console.log("breatheIn1 function was called from within startBoxBreath");
 }
 
@@ -30,7 +37,6 @@ function changeImage() {
   /* Change the background image first to a local file to try to reduce lag time */
   let fewCloudsPic = "url(https://bit.ly/3bwvcVS)";
   let currentImage = document.getElementById("#breathe");
-
   currentImage.style = `background-image: ${fewCloudsPic};`;
 
   /* Hide the start button after it is clicked */

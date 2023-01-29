@@ -41,7 +41,28 @@ a:hover {
   justify-content: center;
   color: #fff;
   font-family: "Quicksand", sans-serif;
+  font-size: 0.5rem;
 }
+/*
+.breath-box-hold {
+  margin-top: -13rem;
+  margin-bottom: 6rem;
+  border: solid 0.1rem #fff;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  background-image: url(/images/duncan.jpg);
+  background-size: cover;
+  width: 12rem;
+  height: 12rem;
+  display: none;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.5rem;
+} */
 
 .flex-container {
   display: flex;
