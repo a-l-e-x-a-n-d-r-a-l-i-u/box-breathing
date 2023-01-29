@@ -16,19 +16,22 @@ function breatheIn1() {
 
 function hideButton() {
   /* Should I again declare the startButton variable inside this function? Or is this a global variable that carries over from the declaration below (outside of the function)? */
+
   let startButton = document.getElementById("#startStop");
   console.log("startStop variable has been declared within the function");
   startButton.style = "display: none;";
 
-  /* Start the breathbox 'animation' and counting */
-  breatheIn1();
+  /* Start the breathbox 'animation' and counting 
+  breatheIn1(); */
   console.log("breatheIn1 function was called from within startBoxBreath");
 }
 
 function changeImage() {
-  /* Change the background image first to a local file to reduce lag time */
-  document.getElementById("#breathe").style.backgroundImage =
-    "url(/images/few-clouds.jpg)";
+  /* Change the background image first to a local file to try to reduce lag time */
+  let fewCloudsPic = "url(https://bit.ly/3bwvcVS)";
+  let currentImage = document.getElementById("#breathe");
+
+  currentImage.style = `background-image: ${fewCloudsPic};`;
 
   /* Hide the start button after it is clicked */
   hideButton();
