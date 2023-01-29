@@ -26,22 +26,22 @@ a:hover {
 }
 
 .breath-box {
-  margin-top: 70%;
+  margin-top: 6rem;
   margin-bottom: 6rem;
   border: solid 0.1rem #fff;
   border-radius: 0.5rem;
   background-color: #fff;
   background-image: url(https://bit.ly/3xf4RD9);
   background-size: cover;
-  width: 6rem;
-  height: 6rem;
+  width: 20rem;
+  height: 20rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   color: #fff;
   font-family: "Quicksand", sans-serif;
-  font-size: 0.5rem;
+  font-size: 2rem;
 }
 /*
 .breath-box-hold {
@@ -78,6 +78,8 @@ a:hover {
   border-radius: 100rem;
   padding-top: 10%;
   padding-bottom: 10%;
+  min-height: 6rem;
+  min-width: 6rem;
   transition: 0.7s all ease-in-out;
 }
 
