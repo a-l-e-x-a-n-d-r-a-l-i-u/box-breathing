@@ -8,7 +8,7 @@ function updateElement(id, styles = {}, innerHTML = null) {
 
 function breatheIn() {
   updateElement("breathe", {
-    backgroundImage: "url(https://bit.ly/3bwvcVS)", //fewCloudsPic
+    backgroundImage: "url(https://jooinn.com/images/beautiful-clouds.jpg)", //fewCloudsPic
     transform: "scale(2)",
     transition: "4s all ease-in-out",
   });
@@ -45,7 +45,7 @@ setTimeout(function breatheOut() {
   instruction.innerHTML = "breathe out";
 
   /* Keep the fewCloudsPic showing */
-  let fewCloudsPic = "url(https://bit.ly/3bwvcVS)";
+  let fewCloudsPic = "url(https://jooinn.com/images/beautiful-clouds.jpg)";
 
   /* Slowly decrease the breathbox size*/
   let box = document.getElementById("#breathe");
@@ -74,7 +74,7 @@ function hideButton() {
 
 function changeImage() {
   /* Change the background image first to a local file to try to reduce lag time */
-  let fewCloudsPic = "url(https://bit.ly/3bwvcVS)";
+  let fewCloudsPic = "url(https://jooinn.com/images/beautiful-clouds.jpg)";
   let currentImage = document.getElementById("#breathe");
   currentImage.style = `background-image: ${fewCloudsPic};`;
 
