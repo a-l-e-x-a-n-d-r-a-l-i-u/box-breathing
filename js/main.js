@@ -30,7 +30,7 @@ function breatheIn() {
 
 function holdBreathIn() {
   updateElement("#breathCount", {}, "hold ...");
-  setTimeout(breatheOut, 8000);
+  setTimeout(breatheOut, 4000);
 }
 
 function breatheOut() {
@@ -40,7 +40,7 @@ function breatheOut() {
     transform: "scale(1)",
     transition: "4s all ease-in-out",
   });
-  setTimeout(holdBreathOut, 12000);
+  setTimeout(holdBreathOut, 4000);
 }
 
 function holdBreathOut() {
