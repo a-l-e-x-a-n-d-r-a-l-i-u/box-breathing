@@ -7,24 +7,13 @@ function updateElement(id, styles = {}, innerHTML = null) {
 }
 
 function breatheIn() {
-  updateElement("breathe");
-}
-
-function breatheIn() {
-  let box = document.getElementById("#breathe");
-
-  /* Keep the fewCloudsPic showing */
-  let fewCloudsPic = "url(https://bit.ly/3bwvcVS)";
-
-  /* Slowly increase the breathbox size*/
-  box.style = `background-image: ${fewCloudsPic}; transform: scale(2); transition: 4s all ease-in-out;`;
-
-  /* Show instruction to breathe in */
-  let instruction = document.getElementById("#breathCount");
-  instruction.innerHTML = "breathe in";
-
-  /* Hold your breath */
-  holdBreath1();
+  updateElement("breathe", {
+    backgroundImage: "url(https://bit.ly/3bwvcVS)", //fewCloudsPic
+    transform: "scale(2)",
+    transition: "4s all ease-in-out",
+  });
+  updateElement("breathCount", {}, "breathe in");
+  setTimeout(holdBreath1, 4000);
 }
 
 setTimeout(function showStartButttonAgain() {
@@ -64,12 +53,12 @@ setTimeout(function breatheOut() {
   holdBreath2();
 }, 8000);
 
-setTimeout(function holdBreath1() {
+function holdBreath1() {
   /* Change instruction to hold breath */
   let instruction = document.getElementById("#breathCount");
   instruction.innerHTML = "hold ...";
   breatheOut();
-}, 4000);
+}
 
 function hideButton() {
   /* Should I again declare the startButton variable inside this function? Or is this a global variable that carries over from the declaration below (outside of the function)? */
