@@ -7,14 +7,14 @@ function updateElement(id, styles = {}, innerHTML = null) {
 }
 
 function changeImage() {
-  updateElement("#breathe", {
+  updateElement("breathe", {
     backgroundImage: "url(https://jooinn.com/images/beautiful-clouds.jpg)",
   });
   hideButton();
 }
 
 function hideButton() {
-  updateElement("#startStop", { display: "none" });
+  updateElement("startStop", { display: "none" });
   breatheIn();
 }
 
@@ -29,12 +29,12 @@ function breatheIn() {
 }
 
 function holdBreathIn() {
-  updateElement("#breathCount", {}, "hold ...");
+  updateElement("breathCount", {}, "hold ...");
   setTimeout(breatheOut, 4000);
 }
 
 function breatheOut() {
-  updateElement("#breathCount", {}, "breathe out");
+  updateElement("breathCount", {}, "breathe out");
   updateElement("breathe", {
     backgroundImage: "url(https://jooinn.com/images/beautiful-clouds.jpg)",
     transform: "scale(1)",
@@ -44,19 +44,19 @@ function breatheOut() {
 }
 
 function holdBreathOut() {
-  updateElement("#breathCount", {}, "hold ...");
+  updateElement("breathCount", {}, "hold ...");
   updateElement("breathe" {
     transition: "4s all ease-in-out"
   })
 }
 
 function startOver() {
-  updateElement("#breathCount", { display: "none" });
+  updateElement("breathCount", { display: "none" });
   setTimeout(showStartButtonAgain, 1000);
 }
 
 function showStartButtonAgain() {
-  updateElement("#startStop", { display: "inline-block" }, "again");
+  updateElement("startStop", { display: "inline-block" }, "again");
 }
 
-document.getElementById("#startStop").addEventListener("click", changeImage);
+document.getElementById("startStop").addEventListener("click", changeImage);
