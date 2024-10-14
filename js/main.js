@@ -1,3 +1,32 @@
+function updateElement(id, styles = {}, innerHTML = null) {
+  const element = document.getElementById(id);
+  if (element) {
+    Object.assign(element.style, styles);
+    if (innerHTML !== null) element.innerHTML = innerHTML;
+  }
+}
+
+function breatheIn() {
+  updateElement("breathe");
+}
+
+function breatheIn() {
+  let box = document.getElementById("#breathe");
+
+  /* Keep the fewCloudsPic showing */
+  let fewCloudsPic = "url(https://bit.ly/3bwvcVS)";
+
+  /* Slowly increase the breathbox size*/
+  box.style = `background-image: ${fewCloudsPic}; transform: scale(2); transition: 4s all ease-in-out;`;
+
+  /* Show instruction to breathe in */
+  let instruction = document.getElementById("#breathCount");
+  instruction.innerHTML = "breathe in";
+
+  /* Hold your breath */
+  holdBreath1();
+}
+
 setTimeout(function showStartButttonAgain() {
   /* Show start button */
   let startButton = document.getElementById("#startStop");
@@ -41,23 +70,6 @@ setTimeout(function holdBreath1() {
   instruction.innerHTML = "hold ...";
   breatheOut();
 }, 4000);
-
-function breatheIn() {
-  let box = document.getElementById("#breathe");
-
-  /* Keep the fewCloudsPic showing */
-  let fewCloudsPic = "url(https://bit.ly/3bwvcVS)";
-
-  /* Slowly increase the breathbox size*/
-  box.style = `background-image: ${fewCloudsPic}; transform: scale(2); transition: 4s all ease-in-out;`;
-
-  /* Show instruction to breathe in */
-  let instruction = document.getElementById("#breathCount");
-  instruction.innerHTML = "breathe in";
-
-  /* Hold your breath */
-  holdBreath1();
-}
 
 function hideButton() {
   /* Should I again declare the startButton variable inside this function? Or is this a global variable that carries over from the declaration below (outside of the function)? */
