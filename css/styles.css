@@ -44,9 +44,10 @@ a:hover {
   font-size: 2rem;
 }
 
-#breathe {
+/* #breathe {
   transform: scale(1);
-}
+  transition: transform 4s ease-in-out;
+} */
 
 .flex-container {
   display: flex;
